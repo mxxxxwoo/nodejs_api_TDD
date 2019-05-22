@@ -20,3 +20,6 @@ app.get('/users', function (req, res) {
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 })
+
+module.exports = app
+// 태스트를 위해 app를 모듈로 exports 합니다. 
