@@ -50,3 +50,8 @@ Error
 - name 파라메터 누락시 400을 반환한다.
 - name이 중복일 경우 409를 반환한다.
 ---
+
+### PUT /users/:id
+
+Success
+- 변경된 name을 응답한다.
