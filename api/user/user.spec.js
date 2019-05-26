@@ -3,7 +3,7 @@ const request = require('supertest')
 const should = require('should')
 // should 모듈
 
-const app = require('./index')
+const app = require('../../')
 // index.js 모듈
 
 describe('GET /users는', () => {

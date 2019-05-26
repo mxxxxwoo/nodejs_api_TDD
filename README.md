@@ -63,4 +63,12 @@ Error
 - 이름이 중복일 경우 409 응답.
 ---
 
+### 코드 리펙토링
+
+- 기존 index.js와 index.spec.js를 분리해서 api/user/폴더 하단에 정리한다.
+- /api/user/ 에는 index.js, user.ctrl.js, user.spec.js 세가지로 정리한다.
+- index.js에는 라우팅 설정 로직
+- user.ctrl.js에는 실제 api 로직이 들어가며
+- user.spec.js에는 api로직들의 테스트 코드가 들어가게 된다.
+
 
