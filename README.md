@@ -71,4 +71,10 @@ Error
 - user.ctrl.js에는 실제 api 로직이 들어가며
 - user.spec.js에는 api로직들의 테스트 코드가 들어가게 된다.
 
+---
 
+### ORM
+
+- 데이터베이스를 객체로 추상화해 논것을 ORM(Object Relational Mapping)이라고 한다.
+- 쿼리를 직접 작성하는 대신 ORM의 메소드로 데이터를 관리할 수 있는 것이 장점이다.
+- 노드에서 SQL ORM은 시퀄라이져(Sequelize)가 있다.
