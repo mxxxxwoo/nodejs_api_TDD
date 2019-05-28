@@ -2,12 +2,21 @@ const request = require('supertest')
 // superTest 모듈
 const should = require('should')
 // should 모듈
-
 const app = require('../../')
 // index.js 모듈
+const models = require('../../models')
+// DB데이터 모듈
 
-describe('GET /users는', () => {
+describe.only('GET /users는', () => {
     describe('성공시', () => {
+        const users = [
+            {name: 'alice'}, {name: 'bek'}, {name: 'chris'}
+        ]
+        before(()=> models.sequelize.sync({force: true}))
+        // DB 초기화
+        before(()=> models.User.bulkCreate(users))
+        // DB에 값 입력 (bulkCreate는 여러개의 데이터를 입력하는 역할)
+
         it('유저 객체를 담은 배열로 응답함', (done) => {
             request(app)
                 .get('/users')
