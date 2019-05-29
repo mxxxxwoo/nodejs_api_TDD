@@ -7,7 +7,7 @@ const app = require('../../')
 const models = require('../../models')
 // DB데이터 모듈
 
-describe.only('GET /users는', () => {
+describe('GET /users는', () => {
     describe('성공시', () => {
         const users = [
             {name: 'alice'}, {name: 'bek'}, {name: 'chris'}
@@ -43,7 +43,7 @@ describe.only('GET /users는', () => {
         })
     })
 })
-describe('GET /users/:id는', () => {
+describe.only('GET /users/:id는', () => {
     describe('성공시', () => {
         it('id가 1인 유저 객체를 반환한다.', (done) => {
             request(app)

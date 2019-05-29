@@ -96,3 +96,7 @@ Error
 - describe, it 에 .only함수를 사용하면 해당 테스트만 실행한다. 
 
 ---
+
+## show 컨트롤러와 DB 연동
+
+- package.json파일 안에 test script에서 mocha 명령어를 돌릴때 -w 옵션을 주면 자동으로 테스트를 한다.
