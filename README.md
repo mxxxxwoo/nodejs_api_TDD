@@ -108,3 +108,12 @@ Error
 ## destroy 컨트롤러와 DB 연동
 
 - destroy 함수를 이용해서 입력받은 id값을 삭제한다. 
+
+---
+
+## create 컨트롤러와 DB 연동
+
+- models.js에서 DB 설정에서 unique: true를 주면 중복값으로 저장하지 않는다.
+- DB 초기화 및 싱크를 각 describe 마다 넣어줘 DB 초기화 및 싱크를 진행한다. 
+- create 함수를 통해 name값을 전달하고 then으로 받아서 성공시 201을 반환하고
+- name 중복으로 인한 실패시 나타나는 에러값을 체크해서 409를 반환해준다. 
