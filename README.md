@@ -102,3 +102,9 @@ Error
 
 - package.json파일 안에 test script에서 mocha 명령어를 돌릴때 -w 옵션을 주면 자동으로 테스트를 한다.
 - findOne 함수를 이용해서 id값을 체크한 뒤 json으로 리턴한다.
+
+---
+
+## destroy 컨트롤러와 DB 연동
+
+- destroy 함수를 이용해서 입력받은 id값을 삭제한다. 
